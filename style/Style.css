@@ -1,0 +1,85 @@
+html{
+    height:100%;
+    margin:0px;
+}
+
+body{
+    margin: 0px auto;
+    width:100%;
+    font-family: Lao UI,Arial,Verdana;
+    height:100%;
+    background-image: linear-gradient(#C2C2A3, #C2C2A3);
+}
+.Container
+{
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    padding:0px;
+    background-image: linear-gradient(#C2C2A3, #C2C2A3);
+    }
+
+.Wrapper{
+    position: relative;
+    width: 900px;
+    padding:5px;
+}
+#Header{
+    height:65px;
+    font-size: 30px;
+    text-align: left;
+    font-weight: bolder;
+    font-style: italic;
+    padding: 10px;
+    background:url(banner.gif) no-repeat;
+    text-shadow: 3px 3px 1px Black;
+    color:white;
+    font-family: Calibri;
+}
+
+/*------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------*/
+
+.userlogin{
+    float: right;
+    font-size: 16px;
+    font-family: Calibri;
+    font-style: normal;
+    font-weight: normal;
+    padding:6px;
+    background-color: white;
+    border-radius:0 20px 0 0;
+    color: #424242;
+    text-shadow: 0px 0px 0px;
+}
+
+#contents
+{
+    padding:0px;
+    background-color: #f3f3f3;
+    border-radius: 30px 30px 30px 30px;
+	box-shadow:5px 5px 5px #888888;
+}
+.gradient {
+	/* Center Positioning */
+	width: 600px;
+	height: 600px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -300px;
+	margin-top: -300px;
+	z-index: -2;
+	
+	/* Fallback */ 
+	background-image: url(images/gradient.png); 
+	background-repeat: no-repeat; 
+	
+	/* CSS3 Gradient */
+	background-image: -webkit-gradient(radial, 0% 0%, 0% 100%, from(rgba(213,246,255,1)), to(rgba(213,246,255,0)));
+	background-image: -webkit-radial-gradient(50% 50%, 40% 40%, rgba(213,246,255,1), rgba(213,246,255,0));
+	background-image: -moz-radial-gradient(50% 50%, 50% 50%, rgba(213,246,255,1), rgba(213,246,255,0));
+	background-image: -ms-radial-gradient(50% 50%, 50% 50%, rgba(213,246,255,1), rgba(213,246,255,0));
+	background-image: -o-radial-gradient(50% 50%, 50% 50%, rgba(213,246,255,1), rgba(213,246,255,0));
+}

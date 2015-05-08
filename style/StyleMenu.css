@@ -1,0 +1,152 @@
+﻿#menu, #menu ul 
+{
+    font-weight:bold;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#menu 
+{
+    font-weight:bold;
+    text-align:center;
+	width: 100%;
+	background-color: #111;
+	background-image: linear-gradient(#C2C2A3 , #C2C2A3);
+	border-radius: 0px;
+}
+
+#menu:before,
+#menu:after {
+	content: "";
+	display: table;
+}
+
+#menu:after {
+	clear: both;
+}
+
+#menu {
+	zoom:1;
+}
+
+#menu li {
+	float: left;
+	position: relative;
+}
+
+#menu a {
+	float: left;
+	padding: 10px 30px;
+	color: White;
+	text-transform: uppercase;
+	font: bold 10px Arial, Helvetica;
+	text-decoration: none;
+    border-right: 0px solid Gray;
+    border-radius: 5px;
+    background-image: linear-gradient(#C2C2A3,#C2C2A3);
+}
+
+#menu a:hover {
+ background-color: #1c7fc3;
+}
+
+#menu a:visited {
+ background-color: red;
+}
+
+#menu li:hover > a {
+	color: Black;
+    	background: White;
+}
+
+*html #menu li a:hover { /* IE6 only */
+	color: #fafafa;
+}
+
+#menu ul {
+	margin: 20px 0 0 0;
+	_margin: 0; /*IE6 only*/
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	top: 38px;
+	left: 0;
+	z-index: 1;	
+	border-radius: 3px;
+	transition: all .2s ease-in-out;  
+    
+}
+
+#menu li:hover > ul {
+	opacity: 1;
+	visibility: visible;
+	margin: 0;
+    Color:White;
+}
+
+#menu ul ul {
+	top: 0;
+	left: 150px;
+	margin: 0 0 0 20px;
+	_margin: 0; /*IE6 only*/	
+}
+
+#menu ul li {
+	float: none;
+	display: block;
+	border: 0;
+	_line-height: 0; /*IE6 only*/
+}
+
+#menu ul li:last-child {   
+	box-shadow: none;    
+    border-radius: 5px;
+}
+
+#menu ul a {    
+	padding: 10px;
+	width: 130px;
+	_height: 10px; /*IE6 only*/
+	display: block;
+	white-space: nowrap;
+	float: none;
+	text-transform: none;
+}
+
+#menu ul a:hover {
+	background-image: linear-gradient(#C2C2A3,#C2C2A3);
+    color:White;
+}
+
+#menu ul li:first-child > a {
+	border-radius: 3px 3px 0 0;
+    border-radius: 5px;
+}
+
+#menu ul li:first-child > a:after {
+	content: '';
+	position: absolute;
+	left: 40px;
+	top: -10px;
+}
+
+#menu ul ul li:first-child a:after {
+	left: -100px;
+	top: 50%;
+	margin-top: -6px;
+	border-left: 0;
+}
+
+#menu ul li:first-child a:hover:after {
+}
+
+#menu ul ul li:first-child a:hover:after {
+}
+
+#menu ul li:last-child > a {
+	border-radius: 0 0 3px 3px;
+    border-radius: 5px;
+}
+
+
